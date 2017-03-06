@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>mod_tz_employee</name>
+    <author>DuongTVTemplaza</author>
+    <creationDate>June 10th 2013</creationDate>
+    <authorEmail>support@templaza.com</authorEmail>
+    <authorUrl>www.templaza.com</authorUrl>
+    <description>MOD_TZ_EMPLOYEE_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_tz_employee">mod_tz_employee.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>admin</folder>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB/en-GB.mod_tz_employee.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_tz_employee.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/modules/mod_tz_employee/admin/formfields">
+                <field name="enable_jquery" type="radio" class="btn-group"
+                       default="0"
+                       label="MOD_TZ_EMPLOYEE_ENABLE_JQUERY">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="media" name="bg" label="MOD_TZ_EMPLOYEE_BG_LABEL"/>
+                <field type="list" name="bg_type" label="MOD_TZ_EMPLOYEE_BG_TYPE_LABEL" default="1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </field>
+                <field type="tzemployee" name="employee" label="MOD_TZ_EMPLOYEE_EMPLOYEE_INFORMATION_LABEL">
+                    <tzfield name="employee_name" type="text"
+                             label="MOD_TZ_EMPLOYEE_NAME_LABEL"/>
+                    <tzfield name="employee_career" type="text"
+                             label="MOD_TZ_EMPLOYEE_CAREER_LABEL"/>
+                    <tzfield name="desc" type="textarea" filter="raw"
+                             label="MOD_TZ_EMPLOYEE_DESC_LABEL"/>
+                    <tzfield name="facebook" type="text"
+                             label="MOD_TZ_EMPLOYEE_LINK_FACEBOOK_LABEL"/>
+                    <tzfield name="twitter" type="text"
+                             label="MOD_TZ_EMPLOYEE_LINK_TWITTER_LABEL"/>
+                    <tzfield name="google" type="text"
+                             label="MOD_TZ_EMPLOYEE_LINK_GOOGLE_LABEL"/>
+                    <tzfield name="linkedin" type="text"
+                             label="MOD_TZ_EMPLOYEE_LINKEDIN_LABEL"/>
+                    <tzfield name="skype" type="text"
+                             label="MOD_TZ_EMPLOYEE_SKYPE_LABEL"/>
+                    <tzfield name="employee_image" type="media" label="MOD_TZ_EMPLOYEE_IMAGE_LABEL"/>
+                </field>
+
+            </fieldset>
+            <fieldset name="slider" label="MOD_TZ_EMPLOYEE_FIELDSET_SLIDER">
+
+                <field name="autoPlay" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_EMPLOYEE_AUTO_LABEL"
+                       description="MOD_TZ_EMPLOYEE_AUTO_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="stopOnHover" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_EMPLOYEE_STOP_ON_HOVER_LABEL"
+                       description="MOD_TZ_EMPLOYEE_STOP_ON_HOVER_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="singleItem" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_EMPLOYEE_SINGLE_ITEM_LABEL"
+                       description="MOD_TZ_EMPLOYEE_SINGLE_ITEM_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="itemsScaleUp" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_EMPLOYEE_ITEMS_SCALE_UP_LABEL"
+                       description="MOD_TZ_EMPLOYEE_ITEMS_SCALE_UP_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="rewindNav" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_EMPLOYEE_REWIND_NAV_LABEL"
+                       description="MOD_TZ_EMPLOYEE_REWIND_NAV_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="navigation" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_EMPLOYEE_NAVIGATION_LABEL"
+                       description="MOD_TZ_EMPLOYEE_NAVIGATION_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="pagination" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_EMPLOYEE_PAGINATION_LABEL"
+                       description="MOD_TZ_EMPLOYEE_PAGINATION_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="paginationNumbers" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_EMPLOYEE_PAGINATION_NUMBERS_LABEL"
+                       description="MOD_TZ_EMPLOYEE_PAGINATION_NUMBERS_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="items" type="text"
+                       default="5"
+                       label="MOD_TZ_EMPLOYEE_ITEMS_LABEL"
+                       description="MOD_TZ_EMPLOYEE_ITEMS_DESC"/>
+
+                <field name="slideSpeed" type="text"
+                       default="200"
+                       label="MOD_TZ_EMPLOYEE_SLIDE_SPEED_LABEL"
+                       description="MOD_TZ_EMPLOYEE_SLIDE_SPEED_DESC"/>
+
+                <field name="paginationSpeed" type="text"
+                       default="800"
+                       label="MOD_TZ_EMPLOYEE_PAGINATION_SPEED_LABEL"
+                       description="MOD_TZ_EMPLOYEE_PAGINATION_SPEED_DESC"/>
+
+                <field name="rewindSpeed" type="text"
+                       default="1000"
+                       label="MOD_TZ_EMPLOYEE_REWIND_SPEED_LABEL"
+                       description="MOD_TZ_EMPLOYEE_REWIND_SPEED_DESC"/>
+
+            </fieldset>
+            <fieldset name="advanced">
+
+                <field name="layout" type="modulelayout"
+                       label="JFIELD_ALT_LAYOUT_LABEL"
+                       description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+
+                <field name="moduleclass_sfx" type="textarea" rows="3"
+                       label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                       description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+
+                <field name="cache" type="list" default="1"
+                       label="COM_MODULES_FIELD_CACHING_LABEL"
+                       description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field name="cache_time" type="text" default="900"
+                       label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                       description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+                <field name="cachemode" type="hidden"
+                       default="static">
+                    <option value="static"></option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

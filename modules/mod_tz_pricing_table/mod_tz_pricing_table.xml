@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>mod_tz_pricing_table</name>
+    <author>TuanNATemplaza</author>
+    <creationDate>November 22th 2013</creationDate>
+    <authorEmail>support@templaza.com</authorEmail>
+    <authorUrl>www.templaza.com</authorUrl>
+    <description>MOD_TZ_PRICING_TABLE_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_tz_pricing_table">mod_tz_pricing_table.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>admin</folder>
+        <folder>languages</folder>
+        <folder>tmpl</folder>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB/en-GB.mod_tz_pricing_table.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_tz_pricing_table.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic"
+                      addfieldpath="/modules/mod_tz_pricing_table/admin/formfields">
+                <field type="tzpricingtable" name="pricingtable" label="MOD_TZ_PRICING_TABLE_INFORMATION_LABEL">
+                    <tzfield type="text" name="title"
+                             label="MOD_TZ_PRICING_TABLE_TITLE_LABEL"/>
+                    <tzfield type="text" name="price"
+                             label="MOD_TZ_PRICING_TABLE_PRICE_LABEL"/>
+                    <tzfield type="textarea" name="content"
+                             label="MOD_TZ_PRICING_TABLE_CONTENT_LABEL"/>
+                    <tzfield type="text" name="icon"
+                             label="MOD_TZ_PRICING_TABLE_ICON_LABEL"/>
+                    <tzfield type="text" name="button_text"
+                             label="MOD_TZ_PRICING_TABLE_BUTTON_TEXT_LABEL"/>
+                    <tzfield type="text" name="button_link"
+                             label="MOD_TZ_PRICING_TABLE_BUTTON_LINK_LABEL"/>
+                    <tzfield type="list" name="active"
+                             default="0"
+                             label="MOD_TZ_PRICING_TABLE_ACTIVE_LINK_LABEL">
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                    </tzfield>
+                </field>
+                <field type="media"
+                       name="background"
+                       label="MOD_TZ_PRICING_TABLE_BACKGROUND_LABEL"/>
+            </fieldset>
+
+            <fieldset name="carousel">
+                <field name="item" label="MOD_TZ_COUNT_CAROUSEL_ITEM_LABEL" default="5" type="text"/>
+                <field name="itemDesktop" label="MOD_TZ_COUNT_CAROUSEL_ITEM_DESKTOP_LABEL" default="5" type="text"/>
+                <field name="itemTablet" label="MOD_TZ_COUNT_CAROUSEL_ITEM_TABLET_LABEL" default="3" type="text"/>
+                <field name="itemDesktopSmall" label="MOD_TZ_COUNT_CAROUSEL_ITEM_DESKTOP_SMALL_LABEL" default="3"
+                       type="text"/>
+                <field name="itemMobile" label="MOD_TZ_COUNT_CAROUSEL_ITEM_MOBILE_LABEL" default="1" type="text"/>
+                <field name="pagination" label="MOD_TZ_COUNT_CAROUSEL_PAGINATION_LABEL" type="radio" default="false"
+                       class="btn-group">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field name="navigation" label="MOD_TZ_COUNT_CAROUSEL_NAVIGATION_LABEL" type="radio" default="true"
+                       class="btn-group">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field name="rewindNav" label="MOD_TZ_COUNT_CAROUSEL_REWIND_NAV_LABEL" type="radio" default="true"
+                       class="btn-group">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field name="slideSpeed" label="MOD_TZ_COUNT_CAROUSEL_SLIDE_SPEED_LABEL" default="200" type="text"/>
+                <field name="paginationSpeed" label="MOD_TZ_COUNT_CAROUSEL_PAGINATION_SPEED_LABEL" default="800"
+                       type="text"/>
+                <field name="rewindSpeed" label="MOD_TZ_COUNT_CAROUSEL_REWIND_SPEED_LABEL" default="1000" type="text"/>
+            </fieldset>
+
+            <fieldset name="advanced">
+
+                <field name="layout" type="modulelayout"
+                       label="JFIELD_ALT_LAYOUT_LABEL"
+                       description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+
+                <field name="moduleclass_sfx" type="textarea" rows="3"
+                       label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                       description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+
+                <field name="cache" type="list" default="1"
+                       label="COM_MODULES_FIELD_CACHING_LABEL"
+                       description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field name="cache_time" type="text" default="900"
+                       label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                       description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+                <field name="cachemode" type="hidden"
+                       default="static">
+                    <option value="static"></option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

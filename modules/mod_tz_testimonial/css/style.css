@@ -1,0 +1,37 @@
+.TzTestimonial{
+    padding: 0;
+}
+ul.TzTestimonial li{
+    list-style: none outside none;
+    padding: 0;
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
+}
+.TzTestimonial .image{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+    -webkit-background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-clip: padding-box;
+}
+.TzTestimonial .info{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    font-size: 48px;
+    line-height: 62px;
+}
+.TzTestimonial .quote{
+    margin-top: 13%;
+}

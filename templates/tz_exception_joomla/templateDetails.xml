@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN"
+        "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site" method="upgrade">
+    <name>tz_exception_joomla</name>
+    <version>1.6</version>
+    <creationDate>06/10/2014</creationDate>
+    <author>TemPlaza</author>
+    <authorEmail>info@templaza.com</authorEmail>
+    <copyright>Copyright (C) 2012 TemPlaza. All rights reserved.</copyright>
+    <description><![CDATA[This is Plazart Framework]]></description>
+    <group>plazart</group>
+    <tzupdate>http://www.templaza.com/</tzupdate>
+    <tzrequired>
+        <item>
+        <name>Com_tz_portfolio</name>
+        <code>com_tz_portfolio</code>
+        <url>http://www.tzportfolio.com/</url>
+        </item>
+        <item>
+            <name>Com_hikashop</name>
+            <code>HikaShop</code>
+            <url>http://extensions.joomla.org/extension/hikashop</url>
+        </item>
+    </tzrequired>
+    <files>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>favicon.ico</filename>
+        <filename>index.php</filename>
+        <filename>offline.php</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>templateInfo.php</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <folder>admin</folder>
+        <folder>config</folder>
+        <folder>css</folder>
+        <folder>html</folder>
+        <folder>fonts</folder>
+        <folder>images</folder>
+        <folder>language</folder>
+        <folder>js</folder>
+        <folder>layouts</folder>
+        <folder>libraries</folder>
+    </files>
+    <positions>
+        <position>advertise</position>
+        <position>map</position>
+        <position>menu-rep</position>
+        <position>main-content</position>
+        <position>job</position>
+        <position>relate_shop</position>
+        <position>none</position>
+        <position>none-1</position>
+        <position>right</position>
+        <position>span-1</position>
+        <position>loading</position>
+        <position>slide</position>
+        <position>totop</position>
+        <position>debug</position>
+        <position>menu</position>
+        <position>banner</position>
+        <position>breadcrumbs</position>
+        <position>position-0</position>
+        <position>position-1</position>
+        <position>position-1-1</position>
+        <position>position-1-2</position>
+        <position>position-2</position>
+        <position>position-2-1</position>
+        <position>position-3</position>
+        <position>position-3-1</position>
+        <position>position-3-2</position>
+        <position>position-4</position>
+        <position>position-4-1</position>
+        <position>position-5</position>
+        <position>position-5-1</position>
+        <position>position-6</position>
+        <position>position-6-1</position>
+        <position>position-7</position>
+        <position>position-7-1</position>
+        <position>position-8</position>
+        <position>position-9</position>
+        <position>position-10</position>
+        <position>position-11</position>
+        <position>position-12</position>
+        <position>position-12-1</position>
+        <position>position-13</position>
+        <position>position-14</position>
+        <position>block-1</position>
+        <position>block-2</position>
+        <position>block-3</position>
+        <position>block-4</position>
+        <position>block-5</position>
+        <position>block-6</position>
+        <position>block-hr</position>
+        <position>block-hr-1</position>
+        <position>top-bar-1</position>
+        <position>top-bar-2</position>
+        <position>header-1</position>
+        <position>header-2</position>
+        <position>login-top</position>
+        <position>search-top</position>
+        <position>search-top-label</position>
+        <position>footer-bar</position>
+        <position>footer-top-1</position>
+        <position>footer-top-2</position>
+        <position>footer-1</position>
+        <position>footer-2</position>
+        <position>footer-3</position>
+        <position>footer-4</position>
+        <position>footer-5</position>
+        <position>footer-6</position>
+        <position>footer-7</position>
+        <position>footer-8</position>
+        <position>footer-9</position>
+        <position>footer-10</position>
+    </positions>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.tpl_tz_exception_joomla.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_tz_exception_joomla.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="theme_params" label="TZ_THEME_LABEL" description="TZ_THEME_DESC"
+                      addfieldpath="/templates/tz_exception_joomla/admin/elements">
+
+                <field name="logo_type" type="list" default="image" label="TPL_TZ_LANG_LOGO_TYPE"
+                       description="TPL_TZ_LANG_LOGO_TYPE_DESC">
+                    <option value="image">TPL_TZ_LANG_LOGO_TYPE_IMAGE</option>
+                    <option value="text">TPL_TZ_LANG_LOGO_TYPE_TEXT</option>
+                    <option value="css">TPL_TZ_LANG_LOGO_TYPE_CSS</option>
+                    <option value="none">TPL_TZ_LANG_LOGO_TYPE_NONE</option>
+                </field>
+
+                <field name="logo_image" type="media" default="" label="TPL_TZ_LANG_LOGO_IMAGE"
+                       description="TPL_TZ_LANG_LOGO_IMAGE_DESC"/>
+
+                <field name="logo_text" type="text" default="" label="TPL_TZ_LANG_LOGO_TEXT"
+                       description="TPL_TZ_LANG_LOGO_TEXT_DESC"/>
+
+                <field name="logo_slogan" type="text" default="" label="TPL_TZ_LANG_LOGO_SLOGAN"
+                       description="TPL_TZ_LANG_LOGO_SLOGAN_DESC"/>
+
+                <field name="favicon_image" type="media" default="" label="TPL_TZ_LANG_FAVICON_IMAGE"
+                       description="TPL_TZ_LANG_FAVICON_IMAGE_DESC"/>
+                <field
+                        name="framework_logo"
+                        type="radio"
+                        class="btn-group"
+                        label="TPL_TZ_LANG_FRAMEWORK_LOGO"
+                        default="1"
+                        description="TPL_TZ_LANG_FRAMEWORK_LOGO_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="google_analytics" type="textarea" rows="6" cols="40" label="TPL_TZ_LANG_GOOGLE_ANALYTICS"
+                       description="TPL_TZ_LANG_GOOGLE_ANALYTICS_DESC"/>
+
+
+                <field name="type_breadcrumbs" type="list" default="1" label="TPL_TZ_EXECPTION_TYPE_BREADCRUMBS_LABEL">
+                    <option value="1">JSTYLE1</option>
+                    <option value="2">JSTYLE2</option>
+                    <option value="3">JSTYLE3</option>
+                    <option value="4">JSTYLE4</option>
+                </field>
+
+                <field name="image_breadcrumbs"
+                       type="media"
+                       label="TPL_TZ_EXECPTION_IMAGE_BREADCRUMBS_LABEL"/>
+
+                <field name="title_breadcrumbs"
+                       type="textarea"
+                       label="TPL_TZ_EXECPTION_TITLE_BREADCRUMBS_LABEL"
+                       filter="raw"/>
+
+                <field name="desc_breadcrumbs"
+                       type="textarea"
+                       label="TPL_TZ_EXECPTION_DESC_BREADCRUMBS_LABEL"
+                       filter="raw"/>
+
+                <field name="icon_breadcrumbs"
+                       type="text"
+                       label="TPL_TZ_EXECPTION_ICON_BREADCRUMBS_LABEL"
+                       filter="raw"/>
+            </fieldset>
+
+            <fieldset name="layout_params">
+                <field type="plazartlayout" name="generate"/>
+            </fieldset>
+
+
+            <!-- Font settings -->
+            <fieldset name="font_params" addfieldpath="/plugins/system/plazart/includes/depend">
+                <field name="font_name_group1" type="plazartfont" directory="templates/tz_exception_joomla/fonts/"
+                       label="PLAZART_FONT_NAME_G1" description="PLAZART_FONT_NAME_G1_DESC"/>
+                <field name="font_rules_group1" type="textarea" rows="6" cols="40" label="PLAZART_FONT_RULES_G1"
+                       description="PLAZART_FONT_RULES_G1_DESC"/>
+                <field name="font_name_group2" type="plazartfont" directory="templates/tz_exception_joomla/fonts/"
+                       label="PLAZART_FONT_NAME_G2" description="PLAZART_FONT_NAME_G2_DESC"/>
+                <field name="font_rules_group2" type="textarea" rows="6" cols="40" label="PLAZART_FONT_RULES_G2"
+                       description="PLAZART_FONT_RULES_G2_DESC"/>
+                <field name="font_name_group3" type="plazartfont" directory="templates/tz_exception_joomla/fonts/"
+                       label="PLAZART_FONT_NAME_G3" description="PLAZART_FONT_NAME_G3_DESC"/>
+                <field name="font_rules_group3" type="textarea" rows="6" cols="40" label="PLAZART_FONT_RULES_G3"
+                       description="PLAZART_FONT_RULES_G3_DESC"/>
+                <field name="font_name_group4" type="plazartfont" directory="templates/tz_exception_joomla/fonts/"
+                       label="PLAZART_FONT_NAME_G4" description="PLAZART_FONT_NAME_G4_DESC"/>
+                <field name="font_rules_group4" type="textarea" rows="6" cols="40" label="PLAZART_FONT_RULES_G4"
+                       description="PLAZART_FONT_RULES_G4_DESC"/>
+            </fieldset>
+
+            <!-- Dev settings -->
+            <fieldset name="dev_params">
+                <field
+                        name="css_override"
+                        type="radio"
+                        class="btn-group"
+                        label="TPL_TZ_LANG_CSS_OVERRIDE"
+                        default="0"
+                        description="TPL_TZ_LANG_CSS_OVERRIDE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                        name="css_prefixer"
+                        type="radio"
+                        class="btn-group"
+                        label="TPL_TZ_LANG_CSS_PREFIXER"
+                        default="0"
+                        description="TPL_TZ_LANG_CSS_PREFIXER_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                        name="boxes_temp"
+                        type="radio"
+                        class="btn-group"
+                        label="TPL_TZ_LANG_BOXES_TEMP"
+                        default="0"
+                        description="TPL_TZ_LANG_BOXES_TEMP_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="max_page_width"
+                       type="text" default=""
+                       label="TPL_TZ_LANG_MAX_PAGE_WIDTH"
+                       description="TPL_TZ_LANG_MAX_PAGE_WIDTH_DESC"/>
+
+                <field name="max_page_width_value"
+                       type="list"
+                       default="px"
+                       label="TPL_TZ_LANG_MAX_PAGE_WIDTH_UNIT"
+                       description="TPL_TZ_LANG_MAX_PAGE_WIDTH_UNIT_DESC">
+                    <option value="px">TPL_TZ_LANG_PIXEL</option>
+                    <option value="%">TPL_TZ_LANG_PERCENT</option>
+                </field>
+                <field name="background_body"
+                       type="media"
+                       label="TPL_TZ_LANG_BACKGROUND_BODY"
+                       description="TPL_TZ_LANG_BACKGROUND_BODY_DESC"/>
+
+                <field name="css_custom"
+                       type="textarea"
+                       rows="6"
+                       cols="40"
+                       label="TPL_TZ_LANG_CSS_CUSTOM"
+                       description="TPL_TZ_LANG_CSS_CUSTOM_DESC"/>
+                <field
+                        name="chrome_frame_support"
+                        type="radio"
+                        class="btn-group"
+                        label="TPL_TZ_LANG_CHROME_FRAME_SUPPORT"
+                        default="0"
+                        description="TPL_TZ_LANG_CHROME_FRAME_SUPPORT_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+            <fieldset label="TPL_TZ_TEMPLATE_OPTION" name="tz_template_option">
+                <field type="spacer"
+                       name="myspacer3"
+                       label="&lt;strong style=&quot;color:#F9701B; text-transform:uppercase; padding-top:10px; display:block;&quot;&gt;Menu Style&lt;/strong&gt;"/>
+
+
+                <field name="type_menu" type="list" label="TPL_TZ_TYPE_MENU" default="0">
+                    <option value="0">JDEFAULT</option>
+                    <option value="1">JMEGA</option>
+                    <option value="2">JNAV2</option>
+                    <option value="3">JNAV3</option>
+                    <option value="4">JSTICKY</option>
+                </field>
+                <field name="type_fix" type="list" label="TPL_TZ_TYPE_FIX" default="0">
+                    <option value="no">JNO</option>
+                    <option value="0">JDEFAULT</option>
+                    <option value="1">JOFFSET</option>
+                </field>
+                <field name="one_page" type="list" label="TPL_TZ_ONE_PAGE" default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="spacer"
+                       name="content_style"
+                       label="&lt;strong style=&quot;color:#F9701B; text-transform:uppercase; padding-top:10px; display:block;&quot;&gt;Content Style&lt;/strong&gt;"/>
+                <field name="use_p_article_layout_builder" type="list"
+                       label="TPL_TZ_USE_PORTFOLIO_ARTICLE_LAYOUT_BUILDER_LABEL" default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="type_p_article" type="list" label="TPL_TZ_TYPE_PORTFOLIO_ARTICLE_LABEL" default="1">
+                    <option value="1">JSTYLE1</option>
+                    <option value="2">JSTYLE2</option>
+                </field>
+                <field name="use_article_layout_builder" type="list" label="TPL_TZ_USE_ARTICLE_LAYOUT_BUILDER_LABEL"
+                       default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="type_blog" type="list" label="TPL_TZ_TYPE_BLOG_LABEL" default="2">
+                    <option value="1">JMASONRY</option>
+                    <option value="2">JLARGE</option>
+                    <option value="3">JSMALL</option>
+                </field>
+                <field type="spacer"
+                       name="unlimited_color"
+                       label="&lt;strong style=&quot;color:#F9701B; text-transform:uppercase; padding-top:10px; display:block;&quot;&gt;Color Style&lt;/strong&gt;"/>
+
+                <field name="global_color1" type="color" label="Color 1 Global"/>
+                <field name="global_color2" type="color" label="Color 2 Global"/>
+                <field name="global_bg1" type="color" label="Background 1 Global"/>
+                <field name="global_color_border" default="" type="color" label="Color Border"/>
+
+                <field type="spacer"
+                       name="unlimited_color_top_bar"
+                       label="&lt;strong style=&quot;color:#F9701B; text-transform:uppercase; padding-top:10px; display:block;&quot;&gt;Color TopBar&lt;/strong&gt;"/>
+
+                <field name="top_bar_color" type="color" label="Color 1 Global"/>
+                <field name="top_bar_color_border" default="" type="color" label="Color Border"/>
+
+                <field type="spacer"
+                       name="unlimited_color_menu"
+                       label="&lt;strong style=&quot;color:#F9701B; text-transform:uppercase; padding-top:10px; display:block;&quot;&gt;Color Menu&lt;/strong&gt;"/>
+
+                <field name="menu_color_text" type="color" label="Color Menu Text"/>
+                <field name="menu_color_text_hover" type="color" label="Color Menu Text Hover"/>
+                <field name="menu_color_text_active" type="color" label="Color Menu Text Active"/>
+                <field name="menu_color_bg" type="color" label="Color Background 3D"/>
+                <field name="menu_color_bg_hover" default="" type="color" label="Color Background Hover"/>
+                <field name="menu_color_bg_active" default="" type="color" label="Color Background Active"/>
+
+                <field name="submenu_color_text" default="" type="color" label="Color Text - Sub Menu"/>
+                <field name="submenu_color_text_hover" default="" type="color" label="Color Text Hover - Sub Menu"/>
+                <field name="submenu_color_text_active" default="" type="color" label="Color Text Active - Sub Menu"/>
+                <field name="submenu_color_bg" default="" type="color" label="Color Background - Sub Menu"/>
+                <field name="submenu_color_bg_hover" default="" type="color" label="Color Background Hover - Sub Menu"/>
+                <field name="submenu_color_bg_active" default="" type="color" label="Color Background Active - Sub Menu"/>
+                <field name="submenu_color_border" default="" type="color" label="Color Border - Sub Menu"/>
+
+                <field type="spacer"
+                       name="other_style"
+                       label="&lt;strong style=&quot;color:#F9701B; text-transform:uppercase; padding-top:10px; display:block;&quot;&gt;Other&lt;/strong&gt;"/>
+
+                <field name="dark_light" type="list" label="TPL_TZ_LIGHT_OR_DARK_LABEL" default="2">
+                    <option value="1">JDARK</option>
+                    <option value="2">JLIGHT</option>
+                </field>
+                <field name="rtl" type="radio" class="btn-group" label="TPL_TZ_RTL" default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="scroll_custom" type="radio" class="btn-group" label="TPL_TZ_SCROLL_CUSTOM" default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

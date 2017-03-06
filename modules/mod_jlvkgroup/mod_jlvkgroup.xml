@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade">
+	<name>JL VK Group</name>
+	<creationDate>2010-09-23</creationDate>
+	<author>JoomLine</author>
+	<authorEmail>sale@joomline.ru</authorEmail>
+	<authorUrl>http://www.joomline.net</authorUrl>
+	<copyright>Copyright 2010 JoomLine.net All rights reserved!</copyright>
+	<license>license GNU/GPL: http://www.gnu.org/copyleft/gpl.html </license>
+	<version>2.5.2</version>
+	<description>MOD_JLVKGROUP_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_jlvkgroup">mod_jlvkgroup.php</filename>
+		<filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+	</files>
+    <languages folder="language">
+        <language tag="ru-RU">ru-RU/ru-RU.mod_jlvkgroup.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.mod_jlvkgroup.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_jlvkgroup.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_jlvkgroup.sys.ini</language>
+    </languages>
+
+	<config>
+		<fields name="params">
+          <fieldset name="basic">
+			<field name="group_id" type="text" label="MOD_JLVKGROUP_IDVK_LABEL" description="MOD_JLVKGROUP_IDVK_DESCRIPTION" default="17291036"/>
+			<field name="width" type="text" label="MOD_JLVKGROUP_WIDTH_LABEL" description="MOD_JLVKGROUP_WIDTH_DESCRIPTION" default="200"/>
+			<field name="height" type="text" label="MOD_JLVKGROUP_HEIGHT_LABEL" description="MOD_JLVKGROUP_HEIGHT_DESCRIPTION" default="290"/>
+			<field name="mode" type="list" label="MOD_JLVKGROUP_MODE_LABEL" default="0">
+				<option value="0">MOD_JLVKGROUP_MODE_1</option>
+				<option value="1">MOD_JLVKGROUP_MODE_2</option>
+				<option value="2">MOD_JLVKGROUP_MODE_3</option>
+			</field>
+			<field name="wide" type="radio" label="MOD_JLVKGROUP_WIDE_LABEL" description="MOD_JLVKGROUP_WIDE_DESCRIPTION" default="0">
+				<option value="0">MOD_JLVKGROUP_YES</option>
+				<option value="1">MOD_JLVKGROUP_NO</option>
+			</field>
+			<field name="color1" type="text" label="MOD_JLVKGROUP_COLOR1_LABEL" description="MOD_JLVKGROUP_COLOR1_DESCRIPTION" default="FFFFFF"/>
+			<field name="color2" type="text" label="MOD_JLVKGROUP_COLOR2_LABEL" description="MOD_JLVKGROUP_COLOR2_DESCRIPTION" default="2B587A"/>
+			<field name="color3" type="text" label="MOD_JLVKGROUP_COLOR3_LABEL" description="MOD_JLVKGROUP_COLOR3_DESCRIPTION" default="5B7FA6"/>
+			<field name="link" type="radio" label="MOD_JLVKGROUP_LINK_LABEL" description="MOD_JLVKGROUP_LINK_DESCRIPTION" default="1">
+				<option value="0">MOD_JLVKGROUP_YES</option>
+				<option value="1">MOD_JLVKGROUP_NO</option>
+			</field>
+			<field	name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		</fieldset>
+     </fields>
+ 
+	</config>
+<updateservers><server type="extension" priority="1" name="Joomline">http://joomline.net/index.php?option=com_ars&amp;view=update&amp;task=stream&amp;format=xml&amp;id=4&amp;dummy=extension.xml</server></updateservers>
+</extension>

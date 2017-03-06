@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" method="upgrade" group="hikashop">
+	<name>Hikashop Google Products Plugin</name>
+	<creationDate>10 janvier 2015</creationDate>
+	<version>2.3.5</version>
+	<author>Hikashop</author>
+	<authorEmail>dev@hikashop.com</authorEmail>
+	<authorUrl>http://www.hikashop.com</authorUrl>
+	<copyright>(C) 2010-2015 HIKARI SOFTWARE. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>This plugin enables you to get a Google Product feed</description>
+	<files>
+		<filename plugin="google_products">google_products.php</filename>
+	</files>
+	<params addpath="/components/com_hikashop/params">
+		<param name="enable_auto_update" type="radio" default="0" label="Enable Auto Upldate" description="Automatically update your google merchant feed via FTP">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="user_name" type="text" size="50" default="" label="FTP User Name" description="Your google account FTP username" />
+		<param name="google_password" type="password" size="50" default="" label="FTP Password" description="Your google account FTP password" />
+		<param name="file_name" type="text" size="50" default="" label="File Name" description="The file name you specified on your google merchant account (It has to end with '.xml')" />
+		<param name="local_path" type="text" size="50" default="" label="Local xml file path" description="You can optionally enter here a relative path from your website root directory (for example products/list.xml if you want it accessible on http://mywebsite.com/products/list.xml) so that the plugin saves the file on your website on each cron" />
+		<param name="frequency" type="text" size="50" default="86400" label="Frequency" description="Frequency at which the google feed will be updated (in seconds)" />
+		<param name="last_cron_update" type="text" size="50" default="1274903175" label="Last Update" description="Last date on which the products were updated via the CRON task" />
+		<param name="increase_perf" type="list" default="" label="Increase performances" description="If you have issues with memory limits or timeouts when using that plugin, you can turn on that option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="2">A lot</option>
+			<option value="3">A lot more</option>
+			<option value="10">No limit !</option>
+		</param>
+		<param name="use_brand" type="list" default="1" label="Use products brand" description="Do you want to use the brand configured in the 'Brand' setting of your products ?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="brand" type="text" size="50" default="" label="Brand override" description="You can override here the products brand (the brand setting of the products won't be used). You can either enter here a brand name, or the column name of the product custom field with the brand name set for each product." />
+		<param name="category" type="text" size="50" default="" label="Category" description="Your products' category (optional excpet for : 'Apparel and Accessories', 'Media', and 'Software'). If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a different category for each product." />
+		<param name="price_displayed" type="list" default="0" label="Price Displayed" description="Choose the price you want to display if there is more than one">
+			<option value="cheapest">Cheapest</option>
+			<option value="average">Average</option>
+			<option value="expensive">Most Expensive</option>
+			<option value="unit">Unit</option>
+		</param>
+		<param name="taxed_price" type="radio" default="0" label="Taxed prices" description="Should the prices have tax applied">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="condition" type="text" size="50" default="" label="Product Condition" description="Your products condition ( you can use either 'used', 'new' or 'refurbished' and no other value is allowed). If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a different condition for each product." />
+		<param name="preview" type="radio" default="0" label="Short Description" description="Display the description to the Readmore tag.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="message" type="text" size="50" default="No description" label="Message If No Description" description="Message displayed if a product doesn't have a description" />
+		<param name="item_id" type="text" size="50" default="" label="Item Id" description="If you want to display your products in a special context, you can add here a menu id" />
+		<param name="add_code" type="radio" default="0" label="Add Product Code (mpn)" description="Display or not the product code as MPN in the XML feed">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="gtin" type="text" size="50" default="" label="GTIN" description="If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a GTIN for each products for which the custom field is filled. If you leave this field empty, no GTIN will be added to the feed." />
+		<param name="in_stock_only" type="radio" default="0" label="In stock products only" description="Only add the products with a sock above 0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="identifier_exists" type="text" size="50" default="" label="Identifier exists" description="Tells google if an identifier (brand, gtin, mpn) exists for your products (you can use either 'TURE' or 'FALSE' and no other value is allowed). If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a identifiers for some products and not for others." />
+		<param name="age_group" type="text" size="50" default="" label="Age group" description="Your products' age group (you can use either 'Adult', 'Kids', 'Toddler', 'Infant' or 'Newborn' and no other value is allowed). If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a different age group for each product." />
+		<param name="gender" type="text" size="50" default="" label="Gender" description="Your products' gender (you can use either 'Male','Female' or 'Unisex' and no other value is allowed). If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a different gender for each product." />
+		<param name="size" type="text" size="50" default="" label="Size" description="Your products' size. If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a different size for each product." />
+		<param name="color" type="text" size="50" default="" label="Color" description="Your products' color. If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a different color for each product." />
+		<param name="shipping" type="textarea" cols="40" rows="2" default="" label="Shipping" description="The shipping rules for your product. Rules must be separated by a comma. Each rule has four variables separated by a colon. For example, if you want two shippinge methods for France, a standard one at 5 euros and an express one at 10 euros you should write: FR::Standard:5.00 EUR,FR::Express:10.00 EUR . If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have different shipping rules for each product." />
+		<param name="download" type="plugintrigger"  default="downloadXML" label="Download" description="Download the XML file. Then, you can import it manually in your google account" />
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_hikashop/fields">
+			<fieldset name="basic">
+				<field name="enable_auto_update" type="radio" default="0" label="Enable Auto Upldate" description="Automatically update your google merchant feed via FTP">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field
+					name="user_name"
+					type="text"
+					label="FTP User Name"
+					size="50"
+					default=""
+					description="Your google account FTP username" />
+				<field
+					name="google_password"
+					type="password"
+					label="FTP Password"
+					size="50"
+					default=""
+					description="Your google account FTP password" />
+				<field
+					name="file_name"
+					type="text"
+					label="File Name"
+					size="50"
+					default=""
+					description="The file name you specified on your google merchant account (It has to end with '.xml')" />
+				<field
+					name="local_path"
+					type="text"
+					size="50"
+					default=""
+					label="Local xml file path"
+					description="You can optionally enter here a relative path from your website root directory (for example products/list.xml if you want it accessible on http://mywebsite.com/products/list.xml) so that the plugin saves the file on your website on each cron" />
+				<field
+					name="frequency"
+					type="text"
+					label="Frequency"
+					size="50"
+					default="86400"
+					description="Frequency at which the google feed will be updated (in seconds)" />
+				<field
+					name="last_cron_update"
+					type="text"
+					label="Last Update"
+					size="50"
+					default="1274903175"
+					description="Last date on which the products were updated via the CRON task" />
+				<field
+					name="increase_perf"
+					type="list"
+					default=""
+					label="Increase performances"
+					description="If you have issues with memory limits or timeouts when using that plugin, you can turn on that option">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+					<option value="2">A lot</option>
+					<option value="3">A lot more</option>
+					<option value="10">No limit !</option>
+				</field>
+				<field name="use_brand" type="list" default="1" label="Use products brand" description="Do you want to use the brand configured in the 'Brand' setting of your products ?">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="brand" type="text" size="50" default="" label="Brand override" description="You can override here the products brand (the brand setting of the products won't be used). You can either enter here a brand name, or the column name of the product custom field with the brand name set for each product." />
+				<field name="category" type="text" size="50" default="" label="Category" description="Your products' category (optional excpet for : 'Apparel and Accessories', 'Media', and 'Software'). If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a different category for each product." />
+				<field name="price_displayed" type="list" default="0" label="Price Displayed" description="Choose the price you want to dispay if there is more than one">
+					<option value="cheapest">Cheapest</option>
+					<option value="average">Average</option>
+					<option value="expensive">Most Expensive</option>
+					<option value="unit">Unit</option>
+				</field>
+				<field name="taxed_price" type="radio" default="0" label="Taxed prices" description="Should the prices have tax applied">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field
+					name="condition"
+					type="text"
+					label="Product Condition"
+					size="50"
+					default=""
+					description="Your products condition (you can use either 'used', 'new' or 'refurbished' and no other value is allowed). If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a different condition for each product." />
+				<field name="preview" type="radio" default="0" label="Short Description" description="Display the description to the Readmore tag.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="message" type="text" size="50" default="No description" label="Message If No Description" description="Message displayed if a product doesn't have a description" />
+				<field name="item_id" type="text" size="50" default="" label="Item Id" description="If you want to display your products in a special context you can add here a menu id" />
+				<field name="add_code" type="radio" default="0" label="Add Product Code (mpn)" description="Display or not the product code as MPN in the XML feed">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="gtin" type="text" size="50" default="" label="GTIN" description="If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a GTIN for each products for which the custom field is filled. If you leave this field empty, no GTIN will be added to the feed." />
+
+				<field name="in_stock_only" type="radio" default="0" label="In stock products only" description="Only add the products with a sock above 0">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="identifier_exists" type="text" size="50" default="" label="Identifier exists" description="Tells google if an identifier (brand, gtin, mpn) exists for your products (you can use either 'TURE' or 'FALSE' and no other value is allowed). If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a identifiers for some products and not for others." />
+				<field name="age_group" type="text" size="50" default="" label="Age group" description="Your products' age group (you can use either 'Adult', 'Kids', 'Toddler', 'Infant' or 'Newborn' and no other value is allowed). If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a different age group for each product." />
+				<field name="gender" type="text" size="50" default="" label="Gender" description="Your products' gender (you can use either 'Male','Female' or 'Unisex' and no other value is allowed). If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a different gender for each product." />
+				<field name="size" type="text" size="50" default="" label="Size" description="Your products' size. If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a different size for each product." />
+				<field name="color" type="text" size="50" default="" label="Color" description="Your products' color. If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have a different color for each product." />
+				<field name="shipping" type="textarea" cols="40" rows="2" default="" label="Shipping" description="The shipping rules for your product. Rules must be separated by a comma. Each rule has four variables separated by a colon. For example, if you want two shippinge methods for France, a standard one at 5 euros and an express one at 10 euros you should write: FR::Standard:5.00 EUR,FR::Express:10.00 EUR . If you enter here the column name of a custom product field, it will use the value of the custom field for each product allowing you to have different shipping rules for each product." />
+				<field
+					name="download"
+					type="plugintrigger"
+					default="downloadXML"
+					label="Download"
+					description="Download the XML file. Then, you can import it manualy in your google account" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

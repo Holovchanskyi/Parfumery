@@ -1,0 +1,139 @@
+
+    .sticky .top-nav ul.level0 > li > a,
+    .plazart-megamenu .navbar-nav > li > a{
+        color: #424242!important;
+    }
+    #plazart-mainnav .plazart-megamenu ul.level0.navbar-nav > li.dropdown.active > a,
+    #plazart-mainnav .plazart-megamenu ul.level0.navbar-nav > li.open.dropdown.active > a,
+    #plazart-mainnav .plazart-megamenu ul.level0.navbar-nav > li.dropdown.active > a > i{
+        color: #ff0000!important;
+    }
+    #plazart-mainnav ul.level0 > li:hover > a,
+    #plazart-mainnav ul.level0 > li > a:hover,
+    #plazart-mainnav ul.level0 > li:hover > a i,
+    #plazart-mainnav ul.level0 > li > a:hover i,
+    #plazart-mainnav .mega-menu .nav li.dropdown.open > .dropdown-toggle,
+    #plazart-mainnav .mega-menu .nav li.dropdown.active > .dropdown-toggle,
+    #plazart-mainnav .mega-menu .nav li.dropdown.open.active > .dropdown-toggle,
+    #plazart-mainnav .mega-menu .nav > li.dropdown.open.active > a:hover,
+    #plazart-mainnav .nav-2 .nav li.dropdown.open > .dropdown-toggle,
+    #plazart-mainnav .nav-2 .nav li.dropdown.active > .dropdown-toggle,
+    #plazart-mainnav .nav-2 .nav li.dropdown.open.active > .dropdown-toggle,
+    #plazart-mainnav .nav-2 .nav > li.dropdown.open.active > a:hover,
+    .top-nav ul li.open a i{
+        color: #0dff7a !important;
+    }
+    .head-style2 #plazart-mainnav .top-nav .nav.level0 > li.open,
+    .head-style2 #plazart-mainnav .top-nav .nav.level0 > li:hover,
+    #plazart-mainnav .nav > li:hover > a,
+    #plazart-mainnav .mega-menu .nav li.dropdown.open > .dropdown-toggle,
+    #plazart-mainnav .nav > li > a:hover
+    {
+        background-color: #3bcdf5;
+    }
+
+    .head-style3 #plazart-mainnav .nav > li > a:hover,
+    .head-style3 #plazart-mainnav .nav > li.open > a{
+        background-color: #3bcdf5 !important;
+    }
+    .head-style2 #plazart-mainnav .top-nav .nav.level0 > li.active,
+    #plazart-mainnav .mega-menu .nav li.dropdown.active > .dropdown-toggle,
+    #plazart-mainnav .mega-menu .nav li.dropdown.open.active > .dropdown-toggle,
+    #plazart-mainnav .mega-menu .nav > li.dropdown.open.active > a:hover,
+    #plazart-mainnav .nav-2 .nav li.dropdown.open > .dropdown-toggle,
+    #plazart-mainnav .nav-2 .nav li.dropdown.active > .dropdown-toggle,
+    #plazart-mainnav .nav-2 .nav li.dropdown.open.active > .dropdown-toggle,
+    #plazart-mainnav .nav-2 .nav > li.dropdown.open.active > a:hover{
+        background-color: #42d674;
+    }
+
+    #plazart-mainnav .plazart-megamenu ul.level0.navbar-nav > li.dropdown.active > a,
+    #plazart-mainnav .plazart-megamenu ul.level0.navbar-nav > li.open.dropdown.active > a,
+    #plazart-mainnav .plazart-megamenu ul.level0.navbar-nav > li.dropdown.active > a > i{
+        background-color: #42d674 !important;
+    }
+    #plazart-mainnav .mega-menu.top-nav ul.level0 > li.active:after,
+    #plazart-mainnav .mega-menu.top-nav ul.level0 > li:hover:after,
+    #plazart-mainnav .nav-2.top-nav ul.level0 > li.active:after,
+    #plazart-mainnav .nav-2.top-nav ul.level0 > li:hover:after
+    {
+        background-color: #a60000;
+    }
+    .head-style3 #plazart-mainnav .dropdown-menu li > a,
+    #plazart-mainnav .mega-menu.top-nav li li > a,
+    #plazart-mainnav .nav-2.top-nav li li > a,
+    #plazart-mainnav .dropdown-menu li > a{
+        background-color: #000000;
+    }
+
+    #plazart-mainnav ul.level0 .new_sub .nav-child{
+        background-color: #000000!important;
+    }
+    #plazart-mainnav .dropdown-menu li > a:hover,
+    #plazart-mainnav .dropdown-menu li > a:focus,
+    #plazart-mainnav .dropdown-submenu:hover > a,
+    #plazart-mainnav .dropdown-submenu.open > a,
+    #plazart-mainnav .mega-menu.top-nav li li:hover > a,
+    #plazart-mainnav .nav-2.top-nav li li:hover > a{
+        background-color: #ffffff;
+    }
+
+    .head-style3 #plazart-mainnav .dropdown-menu li.open > a,
+    .head-style3 #plazart-mainnav .dropdown-menu li > a:hover{
+        background-color: #ffffff;
+    }
+    #plazart-mainnav .mega-menu.top-nav li li.active > a,
+    #plazart-mainnav .nav-2.top-nav li li.active > a,
+    #plazart-mainnav .nav-2.top-nav li li.active:hover > a,
+    #plazart-mainnav .nav-2.top-nav li li.active.open > a,
+    #plazart-mainnav .dropdown-menu .active > a,
+    #plazart-mainnav .dropdown-menu .active > a:hover
+    {
+        background-color: #7d0505;
+    }
+
+    .head-style3 #plazart-mainnav .dropdown-menu li.active > a{
+        background-color: #7d0505 !important;
+    }
+    .head-style3 #plazart-mainnav .dropdown-menu li > a,
+    .head-style3 #plazart-mainnav .dropdown-menu li.dropdown-submenu:after,
+    #plazart-mainnav .dropdown-menu li > a,
+    .top-nav li li.dropdown-submenu:after
+    {
+        color: #ffffff;
+    }
+    #plazart-mainnav .mega-menu.top-nav li li.active:hover > a,
+    #plazart-mainnav .nav-2.top-nav li li.active:hover > a,
+    #plazart-mainnav .mega-menu.top-nav li li.active > a,
+    #plazart-mainnav .nav-2.top-nav li li.active > a,
+    .top-nav li li.dropdown-submenu.active:after,
+    #plazart-mainnav .top-nav li li.dropdown-submenu.active > a
+     #plazart-mainnav .dropdown-menu .active > a,
+     #plazart-mainnav .dropdown-menu .active > a:hover{
+        color: #757575 !important;
+    }
+
+    #plazart-mainnav ul.level0 li li.active.dropdown-submenu:hover:after,
+    #plazart-mainnav ul.level0 li li.active.open > a,
+    #plazart-mainnav ul.level0 li li.active > a{
+        color: #757575 !important;
+    }
+
+    .head-style3 #plazart-mainnav .dropdown-menu li.active > a:hover{
+    color: #757575 !important;
+    }
+    .head-style3 #plazart-mainnav .dropdown-menu li.active.dropdown-submenu:after{
+    color: #757575;
+    }
+    #plazart-mainnav ul.level0 li li.open > a,
+    #plazart-mainnav ul.level0 li li > a:hover,
+    #plazart-mainnav .mega-menu.top-nav li li:hover > a,
+     #plazart-mainnav .nav-2.top-nav li li:hover > a,
+    .top-nav li li.dropdown-submenu:hover:after,
+    .top-nav li li.dropdown-submenu:hover > a{
+        color: #000000 !important;
+    }
+
+    .head-style3 #plazart-mainnav .dropdown-menu li > a:hover{
+        color: #000000 !important;
+    }

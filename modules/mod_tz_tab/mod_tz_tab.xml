@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>mod_tz_tab</name>
+    <author>TuanNATemplaza</author>
+    <creationDate>November 22th 2013</creationDate>
+    <authorEmail>support@templaza.com</authorEmail>
+    <authorUrl>www.templaza.com</authorUrl>
+    <description>MOD_TZ_TAB_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_tz_tab">mod_tz_tab.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>admin</folder>
+        <folder>languages</folder>
+        <folder>tmpl</folder>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB/en-GB.mod_tz_tab.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_tz_tab.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic"
+                      addfieldpath="/modules/mod_tz_tab/admin/formfields">
+                    <field type="tztab" name="tab" label="MOD_TZ_IMAGE_BANNER_INFORMATION_LABEL">
+                        <tzfield type="text" name="title"
+                                 label="MOD_TZ_IMAGE_BANNER_TITLE_LABEL"/>
+                        <tzfield type="text" name="icon"
+                                 label="MOD_TZ_IMAGE_BANNER_ICON_LABEL"/>
+                        <tzfield type="textarea" name="content"
+                                 label="MOD_TZ_IMAGE_BANNER_CONTENT_LABEL"/>
+                    </field>
+                    <field type="radio"
+                           class="btn-group"
+                           name="type_tab"
+                           default="1"
+                           label="MOD_TZ_TAB_TYPE_TAB_LABEL">
+                        <option value="1">JVERTICAL</option>
+                        <option value="2">JHORIZONTAL</option>
+                    </field>
+            </fieldset>
+
+            <fieldset name="advanced">
+
+                <field name="layout" type="modulelayout"
+                       label="JFIELD_ALT_LAYOUT_LABEL"
+                       description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+
+                <field name="moduleclass_sfx" type="textarea" rows="3"
+                       label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                       description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+
+                <field name="cache" type="list" default="1"
+                       label="COM_MODULES_FIELD_CACHING_LABEL"
+                       description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field name="cache_time" type="text" default="900"
+                       label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                       description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+                <field name="cachemode" type="hidden"
+                       default="static">
+                    <option value="static"></option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

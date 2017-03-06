@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="1.5" method="upgrade" group="hikashop">
+	<name>Hikashop Currency Rates Plugin</name>
+	<creationDate>10 janvier 2015</creationDate>
+	<version>2.3.5</version>
+	<author>Hikashop</author>
+	<authorEmail>dev@hikashop.com</authorEmail>
+	<authorUrl>http://www.hikashop.com</authorUrl>
+	<copyright>(C) 2010-2015 HIKARI SOFTWARE. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>This plugin enables you to update rates</description>
+	<files>
+		<filename plugin="rates">rates.php</filename>
+	</files>
+	<params addpath="/components/com_hikashop/params">
+		<param name="frequency" type="text" size="50" default="86400" label="Frequency" description="Frequency at which the ECB feed will be checked (in seconds)" />
+		<param name="last_cron_update" type="text" size="50" default="1274903175" label="Last update" description="Last date on which the rates were updated via the CRON task" />
+		<param name="source" type="list" default="ecb" label="Rates source" description="You can select here the data source for your currency rates">
+			<option value="ecb">European Central Bank</option>
+			<option value="yahoo">Yahoo Finance</option>
+		</param>
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_hikashop/fields">
+			<fieldset name="basic">
+				<field
+					name="frequency"
+					type="text"
+					label="Frequency"
+					size="50"
+					default="86400"
+					description="Frequency at which the ECB feed will be checked (in seconds)" />
+				<field
+					name="last_cron_update"
+					type="text"
+					label="Last update"
+					size="50"
+					default="1274903175"
+					description="Last date on which the rates were updated via the CRON task" />
+				<field name="source" type="list" default="ecb" label="Rates source" description="You can select here the data source for your currency rates">
+					<option value="ecb">European Central Bank</option>
+					<option value="yahoo">Yahoo Finance</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

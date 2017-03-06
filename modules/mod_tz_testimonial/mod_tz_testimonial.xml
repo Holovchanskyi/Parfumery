@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>mod_tz_testimonial</name>
+    <creationDate>June 12th 2013</creationDate>
+    <copyright>Copyright (C) 2013 TemPlaza. All rights reserved.</copyright>
+    <license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <author>DuongTVTemplaza</author>
+    <authorEmail>support@templaza.com</authorEmail>
+    <authorUrl>www.templaza.com</authorUrl>
+    <version>3.0.0</version>
+    <description>MOD_TZ_TESTIMONIAL_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_tz_testimonial">mod_tz_testimonial.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_tz_testimonial.xml</filename>
+        <folder>admin</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>tmpl</folder>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB/en-GB.mod_tz_testimonial.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_tz_testimonial.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/modules/mod_tz_testimonial/admin/formfields">
+
+                <field name="testimonial" type="tztestimonial" count="2" label="MOD_TZ_TESTIMONIAL_LABEL">
+
+                    <tzfield name="testimonial_author" type="text"
+                             label="MOD_TZ_TESTIMONIAL_AUTHOR_LABEL"/>
+                    <tzfield name="testimonial_website" type="text"
+                             label="MOD_TZ_TESTIMONIAL_WEBSITE_LABEL"/>
+                    <tzfield name="testimonial_icon" type="text"
+                             label="MOD_TZ_TESTIMONIAL_ICON_LABEL"/>
+                    <tzfield name="testimonial_image" type="media"
+                             label="MOD_TZ_TESTIMONIAL_IMAGE_LABEL"/>
+                    <tzfield name="testimonial_quotations" type="textarea" filter="raw"
+                             label="MOD_TZ_TESTIMONIAL_CONTENT1_LABEL"/>
+                </field>
+                <field name="background_parallax"
+                       type="media"
+                       label="MOD_TZ_TESTIMONIAL_BACKGROUND_PARALLAX_LABEL"/>
+                <field name="title_slider"
+                       type="text"
+                       default=""
+                       label="MOD_TZ_TESTIMONIAL_TITLE_SLIDE_LABEL"/>
+
+
+            </fieldset>
+
+            <fieldset name="flexSlide">
+                <field name="show_js"
+                       type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_TESTIMONIAL_ONOFF_JS_LABEL">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field name="layout" type="modulelayout"
+                       label="JFIELD_ALT_LAYOUT_LABEL"
+                       description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+
+                <field name="moduleclass_sfx" type="textarea" rows="3"
+                       label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                       description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+
+                <field name="cache" type="list" default="1"
+                       label="COM_MODULES_FIELD_CACHING_LABEL"
+                       description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field name="cache_time" type="text" default="900"
+                       label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                       description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+                <field name="cachemode" type="hidden" default="static">
+                    <option value="static"></option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>

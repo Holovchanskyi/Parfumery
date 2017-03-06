@@ -1,0 +1,568 @@
+body div.pageWrapper.fixedPage {
+  background: #333333;
+}
+.sticky {
+  box-shadow: 0 1px 4px rgba(255,255,255,0.3);
+}
+a:hover,
+a:focus {
+  color: #FFFFFF;
+}
+#infscr-loading {
+  background: transparent;
+  color: #BBBBBB;
+}
+#infscr-loading em {
+  color: #BBBBBB;
+}
+.head-style3 .top-bar,
+.top-bar {
+  border-bottom-color: #3d3d3d;
+  background: #3d3d3d;
+}
+header.top-head {
+  border-bottom-color: #3d3d3d;
+}
+.banner {
+  border-color: #555555 !important;
+}
+.head-style3 .top-bar li {
+  border-left-color: #555555;
+}
+.page-title.title-3 .breadcrumbs,
+.page-title.title-4 .breadcrumbs {
+  background-color: #555555;
+}
+.page-title.title-3 .breadcrumbs li.active,
+.page-title.title-3 .breadcrumbs span,
+.page-title.title-4 .breadcrumbs li.active,
+.page-title.title-4 .breadcrumbs span {
+  color: #dddddd;
+}
+.page-title.title-2 .breadcrumb li {
+  color: #dddddd;
+}
+body > section {
+  background: #333333;
+}
+.slide {
+  background: #333333;
+}
+.title-4 .breadcrumb > li + li:before,
+.title-3 .breadcrumb > li + li:before,
+.title-2 .breadcrumb > li + li:before {
+  color: #dddddd;
+}
+body {
+  background: #333333;
+  color: #BBBBBB;
+}
+.top-bar li {
+  border-left-color: #555555;
+  border-right-color: #555555 !important;
+}
+.cart_items .hikashop_cart_module {
+  border-right-color: #555555;
+  border-left-color: #555555 !important;
+}
+.block-head {
+  border-bottom: none;
+}
+.gry-bg {
+  background: #3d3d3d;
+}
+.box-top i.fa {
+  border-color: #b1b1b1;
+}
+.box-top .more-btn {
+  background: #5f5f5f;
+  color: #dddddd;
+}
+.gry-pattern {
+  background: url("../../../images/assets/patterns/dark-gry-patt.png") repeat scroll 0 0 #3d3d3d;
+  border-bottom-color: #555555;
+  border-top-color: #555555;
+}
+.head-style2 .search-box {
+  background: #555555;
+}
+.head-style2 .search-box .input-box {
+  background: #222222;
+}
+.service-box-1:hover .more-btn {
+  color: #dddddd;
+}
+.testimonials-bg {
+  background: #555555;
+}
+.testimonials-bg:hover {
+  background: #222222;
+}
+.testimonials-name:before,
+.testimonials-name:after {
+  border-color: #474747 transparent transparent;
+}
+.testimonials-bg:hover + .testimonials-name:after,
+.testimonials-bg:hover + .testimonials-name:before {
+  border-color: #111 transparent transparent;
+}
+.testimonials-bg:after {
+  color: #464646;
+}
+.level-out span:before,
+.level-out:after {
+  border-color: transparent transparent transparent #555555;
+}
+.level-out span,
+.level-out {
+  background: #555555;
+}
+.level-out span {
+  color: #FFFFFF;
+}
+.slick-prev,
+.slick-next {
+  color: #3d3d3d;
+}
+.staff-1 .fun-number {
+  color: #dddddd;
+}
+.staff-1 .fun-number {
+  background-color: #222222;
+}
+.staff-2 .fun-title span,
+.staff-1 .fun-title span {
+  color: #FFFFFF;
+}
+.staff-2 .fun-title,
+.staff-2 .fun-icon,
+.staff-1 .fun-title,
+.staff-1 .fun-icon {
+  background-color: #222222;
+}
+.viewAll .btn {
+  background: #3d3d3d;
+}
+.full .TzInner.portfolio-item {
+  border-right-color: #555555 !important;
+}
+#home_content_portfolio .portfolio-item,
+.portfolio .portfolio-item {
+  background: #3d3d3d;
+}
+.portfolio-item:after {
+  border-top-color: #333333;
+}
+.mega-new #plazart-mainnav {
+  background: none repeat scroll 0 0 #222222;
+  border-color: #111;
+}
+.top-nav ul.level0 > li:after {
+  border-right-color: #555555 !important;
+}
+.mega-new .top-nav ul > li {
+  border-left-color: #2f2f2f;
+}
+.top-nav ul.level0 > li {
+  border-right-color: #555555 !important;
+}
+#plazart-mainnav .new_sub .mega-group-title {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+#plazart-mainnav .new_sub .mega-group-title:hover {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+.top-head.sticky,
+.container.sticky {
+  background: #333333 !important;
+}
+.top-nav ul > li {
+  border-left-color: #3d3d3d;
+}
+.mega-menu .level0 > li:after {
+  border-left-color: #555555;
+}
+.top-nav ul li a i {
+  color: #666666;
+}
+.nav-2.top-nav ul > li > a i,
+.nav-2.top-nav ul > li > a i:after {
+  background: #3d3d3d;
+}
+.head-style3 .plazart-megamenu .navbar-nav > li.dropdown.open > a,
+.head-style3 .plazart-megamenu .navbar-nav > li.active.dropdown.open > a,
+.head-style3 #plazart-mainnav .dropdown-menu li > a,
+.head-style3 #plazart-mainnav .nav > li > a:hover,
+.head-style3 .plazart-megamenu .navbar-nav > li.active.dropdown > a {
+  background: #3d3d3d;
+  color: #dddddd;
+}
+.head-style3 #plazart-mainnav .dropdown-menu li.open > a,
+.head-style3 #plazart-mainnav .dropdown-menu li > a:hover,
+.head-style3 #plazart-mainnav .dropdown-menu li.active > a {
+  background: #333333 !important;
+  color: #dddddd;
+}
+.top-search a {
+  background: #3d3d3d;
+  color: #e7512f;
+}
+.input-box {
+  background-color: #222222;
+  border-color: #666666;
+}
+.login-box,
+.txt-box {
+  color: #BBBBBB;
+}
+.service-box-3 .icon,
+.service-box-2 .fa {
+  background-color: #555555;
+  border-color: #555555;
+  color: #b3b3b3;
+  box-shadow: 0 0 0 3px #333333 inset;
+}
+.service-box-2 p.mediumFont {
+  border-bottom-color: #3d3d3d;
+}
+.service-box-3,
+.box-2-cont {
+  border-color: #555555;
+}
+.service-box-3 .r-more,
+.box-2-cont .r-more {
+  background: #555555;
+  color: #dddddd;
+}
+.service-box-2 a.main-color:hover,
+.service-box-3 a.main-color:hover,
+a.main-color:hover,
+.project-name:hover,
+.box-top .more-btn:hover {
+  color: #FFFFFF;
+}
+.box-top h3 {
+  color: #999999;
+}
+.service-box-3 h4 span:before,
+.service-box-2:hover h4 {
+  color: #cccccc;
+}
+.hd-6.top-bar.main-bg .cart_items .hikashop_cart_module .hikashop_cart {
+  color: #FFFFFF;
+}
+#TzContent .TzInner.portfolio-item {
+  background: #3d3d3d;
+}
+.element {
+  color: #BBBBBB;
+}
+.list-details li {
+  border-top-color: #555555;
+}
+.white-bg {
+  background: #333333;
+}
+.porto-stats .fun-text {
+  color: #dddddd;
+}
+.post-info .post-meta {
+  border-bottom-color: #555555;
+}
+.post-info .post-meta li i {
+  color: #858585;
+}
+.widget-content {
+  border-color: -moz-use-text-color #666666 #666666;
+}
+.widget-head {
+  border-color: #666666;
+}
+.widget-content a {
+  color: #cccccc;
+}
+.r-posts-w > ul > li,
+.blog-cat-w ul li,
+.r-comments-w ul li,
+.r-posts-w li {
+  border-top-color: #666666;
+}
+.tags-w .tags a {
+  background: #222222;
+  color: #a5a5a5;
+}
+.tags-w .tags a:hover {
+  background: #777;
+  color: #FFFFFF;
+}
+.list-footer .pagination,
+.list-footer,
+.pager {
+  background: #3d3d3d;
+}
+.masonry .post-image {
+  background: #3d3d3d;
+}
+.post-info.post-meta {
+  border-bottom-color: #555555;
+}
+.blog_info span i {
+  color: #858585;
+}
+.comments .hint .main-color,
+.comments-list .comments-list > div:after,
+.comments-list .comments-list > div:before,
+.comment-author,
+.share-post,
+blockquote {
+  background: #3d3d3d;
+}
+.comment-avatar {
+  background: #333333;
+  border-color: #555555;
+}
+.contact-form select,
+.contact-form input[type="text"],
+.contact-form input[type="password"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form input[type="file"] {
+  background: #222222;
+  border-color: #666666;
+}
+#comments-form .grippie {
+  background: none;
+  border: none;
+}
+#comments-form-subscribe-label {
+  color: #BBBBBB;
+}
+.categories_shop .hikashop_subcontainer {
+  background: transparent !important;
+}
+select {
+  background: #222222;
+  border-color: #555555;
+}
+.hikashop_filter_main {
+  border-color: #555555;
+}
+.item-title {
+  background: #222222;
+}
+.item-title a {
+  color: #dddddd;
+}
+.item-box {
+  background: #3d3d3d !important;
+}
+.item-box:hover {
+  background: #222222 !important;
+}
+.item-cart {
+  border-bottom-color: #4e4e4e;
+}
+.item-cart a {
+  color: #dddddd;
+}
+.item-details {
+  border-top-color: #4e4e4e;
+}
+.product-block,
+.price-block {
+  border-bottom-color: #555555;
+}
+.product-specs a.btn {
+  border-color: #555555;
+}
+.product-specs a.btn:hover {
+  background: #555555;
+  border-color: #666666 !important;
+  color: #dddddd;
+}
+.product-img {
+  border-color: #555555;
+}
+.item-cart-product .add-on {
+  background: #222222;
+}
+.item-cart-product input {
+  background: #333333;
+  border: 1px solid #555555;
+}
+.hr-style5:before,
+.hr-style5:after {
+  background: #333333;
+  color: #555555;
+}
+.hr-style5 {
+  border-color: #555555;
+}
+.tabs > ul li {
+  background: #666666;
+  color: #dddddd;
+}
+.tabs > ul li a {
+  color: #BBBBBB;
+}
+table {
+  border-color: #555555;
+}
+table th {
+  background: #333333;
+  border-right-color: #555555;
+}
+table tr:nth-child(2n) {
+  background: #3d3d3d;
+}
+table td,
+table caption {
+  border-right-color: #555555;
+  border-bottom-color: #555555;
+}
+.hikashop_checkout_login .input {
+  border-color: #555555;
+}
+.table-style2 th {
+  border-bottom-color: #5c5c5c;
+  border-right-color: #555555;
+}
+tr:nth-child(2n) {
+  background: #3d3d3d !important;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td,
+.table-striped > tbody > tr:nth-child(2n+1) > th {
+  background: transparent;
+}
+tfoot tr {
+  background: #555555;
+}
+.hikashop_show_cart_quantity,
+.hikashop_product_quantity_field {
+  background: #333333;
+  border: 1px solid #555555;
+}
+.control-group {
+  border-bottom-color: #555555;
+}
+.plan-title {
+  background: #333333;
+}
+.plan-title span {
+  color: #FFFFFF;
+}
+.accordion li > h3 u,
+.accordion li > h3 a {
+  background: #333333;
+  border-color: #555555;
+}
+.accordion-panel {
+  border-left-color: #555555;
+}
+.staff-3 .gry-bg .fun-text {
+  color: #dddddd !important;
+  background: transparent;
+}
+.team-box {
+  background: #3d3d3d;
+}
+.our_team {
+  background-color: #3d3d3d !important;
+}
+.our_team {
+  border-bottom-color: #555555 !important;
+  border-top-color: #555555 !important;
+}
+.team-box-2 {
+  background-color: #3d3d3d;
+}
+.team-box-2 .team-img {
+  border-color: #555555;
+}
+.my-img .my-details {
+  background: #666666;
+}
+.pricing-table,
+.pricing-table-2 {
+  border-color: #555555;
+}
+.pricing-table li,
+.pricing-table-2 li {
+  border-color: #555555;
+}
+.dots-pattern {
+  border-top-color: #555555;
+}
+.pricing-table-2 i.fa {
+  background: #333333;
+}
+.pricing-table-2 li.even {
+  background: #363636;
+}
+.img-pattern {
+  background: url("../../../images/assets/patterns/dark-img-pattern.png") repeat scroll 0 0 #FFFFFF;
+  border-bottom: 1px solid #666666;
+  border-top: 1px solid #666666;
+}
+tr.even td {
+  background: #333333;
+}
+hr {
+  border-color: #555555 -moz-use-text-color -moz-use-text-color;
+}
+.tabs-vertical .tabs-pane {
+  border-bottom-color: #555555;
+}
+.page-loader {
+  background: #333333;
+}
+.status .spin {
+  border-color: transparent transparent transparent #cccccc;
+}
+.status span {
+  border-color: #222222;
+}
+.siteMap-nav ul ul li {
+  border-bottom-color: #555555;
+}
+.siteMap-nav > ul > li > a {
+  background: #222222;
+  color: #BBBBBB;
+}
+.box,
+.box p {
+  color: #333333;
+}
+.form-input label {
+  color: #BBBBBB;
+}
+.clients > div a,
+.auto-clients > div a {
+  border-bottom-color: #222222;
+}
+.Newsslider {
+  background: none repeat scroll 0 0 #333333;
+}
+.block-head-News {
+  border-bottom-color: #555555 !important;
+}
+.block-head-News:hover {
+  color: #e7512f;
+}
+.block-head-News .icon,
+.block-head-News a {
+  background: none repeat scroll 0 0 #555555 !important;
+}
+.banner div {
+  background: none repeat scroll 0 0 #555 !important;
+  color: #717171 !important;
+}
+body .one-page li.current > a {
+    background: none !important;
+}
+body .item-cart-product > a.add-cart,
+body .item-cart-product > a.add-cart{
+    color: #dddddd !important;
+}
