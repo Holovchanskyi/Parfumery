@@ -12,9 +12,9 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = 'parfum30.mysql.ukraine.com.ua';
-	public $user = 'parfum30_db';
-	public $password = '3y7n1uf7';
+	public $host = 'localhost';
+	public $user = 'root';
+	public $password = 'root';
 	public $db = 'parfum30_db';
 	public $dbprefix = 'kkhty_';
 	public $live_site = '';
